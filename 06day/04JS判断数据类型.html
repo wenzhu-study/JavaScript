@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var i = 5;
+    // js 是不区分浮点数类型的 数值统一都是number
+    var f = 3.14;
+    var b = true;
+    var c = 'a';
+    var str = "abc";
+    document.write("整数" + typeof (i) + "</br>");
+    document.write("浮点" + typeof (f) + "</br>");
+    document.write("布尔" + typeof (b) + "</br>");
+    document.write("字符" + typeof (c) + "</br>");
+    document.write("字符串" + typeof (str) + "</br>");
+    // js内置对象 date等于创建时间对象 相当于获取当前的时间
+    var Date = new Date();
+    document.write("日期" + typeof (Date) + "</br>");
+    // 定义变量，但没有赋值 画大饼什么都没有
+    var u;
+    document.write("未初始化" + typeof (u) + "</br>");
+    // 创建变量 相当于有个瓶子 但是里面的东西是空的
+    var n = null;
+    document.write("null的类型" + typeof (n) + "</br>");
+
+    //console.log在浏览器的 控制台console中 打印日志log  直接打印日志信息到控制台中 显示
+    //用来测试数据的 测试的数据是输出到浏览器的 控制台里面的
+    //我们来看看上面的数据具体都是上面数据类型的
+
+    console.log("var i = 5;" + typeof (i) + "类型的数据！")
+    console.log("var f = 3.14;" + typeof (f) + "类型的数据！")
+    console.log("var c = 'a';" + typeof (c) + "类型的数据！")
+    console.log("var str = 'abc';" + typeof (str) + "类型的数据！")
+    console.log("var Date = new Date();" + typeof (Date) + "类型的数据！")
+    console.log("var n = null;" + typeof (n) + "类型的数据！")
+    console.log("var u;" + typeof (u) + "类型的数据！")
+
+
+
+</script>
+
+</html>

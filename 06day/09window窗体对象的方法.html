@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // prompt 函数，让浏览器弹出一个框
+        var data = window.prompt("请输入你的分数", "默认值")
+        // var data = window.alert("请老板同意奖励我一套别墅: 同意")
+        // var data = window.confirm("请老板同意奖励我一套别墅", "同意")
+    
+        document.write(data)
+    
+        switch (true) {
+            case data >= 90 && data <= 100:
+                document.write("优秀,赠送一套别墅")
+                break;
+            case data >= 80 && data < 90:
+                document.write("良好,奖励一万块")
+                break;
+            case data >= 70 && data < 80:
+                document.write("还行,奖励iphone15")
+                break;
+            case data >= 60 && data < 70:
+                document.write("过得去,放假一天")
+                break;
+            case data < 60:
+                document.write("不及格,继续打工")
+                break;
+            default:
+                document.write("输入成绩非法！！！！")
+        }
+    
+    
+        //  上面的prompt可以用下面的函数单词替换
+        //  alert("提示信息") 在浏览器上弹出一个信息框，只有一个确定按钮
+        //  confirm("提示信息") 弹出提示框，显示确认、取消按钮，点击确认返回true，点击取消返回false
+    
+    
+        // if (data >= 90 && data <= 100) {
+        //     document.write("优秀,赠送一套别墅");
+    
+        // }
+        // else if (data >= 80 && data < 90) {
+        //     document.write("良好,奖励一万块");
+    
+        // } else if (data >= 70 && data < 80) {
+        //     document.write("还行,奖励iphone15")
+    
+        // } else if (data >= 60 && data < 70) {
+        //     document.write("过得去,放假一天")
+    
+        // } else if (data < 60) {
+        //     document.write("不及格,继续打工")
+    
+        // } else {
+        //     document.write("输入成绩非法！！！！")
+        // }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+
+</html>

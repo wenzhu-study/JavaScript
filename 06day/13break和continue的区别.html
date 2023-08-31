@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<!-- 
+    break: 结束整个循环
+    continue：跳过本次循环，执行下一次循环
+ -->
+
+<script>
+
+
+    document.write("<h1>break的情况</h1>")
+    // break 终止整个循环 整个
+    // continue 终止当前的一次循环 跳过该次 一次
+    for (var i = 1; i <= 5; i++) {
+        // 如果当i等于2的时候就break
+        if (i == 2) {
+            // 只会输出1 因为当i=2的时候 就触发了break整个循环就结束了
+            break;
+        }
+        document.write("<h2>" + i + "</h2>");
+    }
+
+
+
+    document.write("<h1>continue的情况</h1>");
+    document.write("<hr>")
+    for (var i = 1; i <= 5; i++) {
+        //如果当i等于2 的时候就continue
+        if (i == 2) {
+            //结束本次循环 进入下次循环 当i=2时候 后面2的输出代码就不执行了 去3了
+            continue;
+        }
+
+        document.write("<h2>" + i + "</h2>");
+    }
+
+</script>
+
+</html>

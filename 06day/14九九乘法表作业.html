@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 添加表格的样式 -->
+    <Style>
+        td {
+            /* 设置内边距 */
+            padding: 5px;
+        }
+
+        table {
+            /*边框设置为细线模式*/
+            border-collapse: collapse;
+        }
+
+
+        td:hover {
+            /* 数标放在表格方框中会出现天蓝色 */
+            background-color: skyblue;
+        }
+
+        /* 添加运算结果单元格的边框样式 */
+        .result-cell {
+            border: 1px solid black;
+        }
+    </Style>
+</head>
+
+<body>
+
+</body>
+<script>
+    /* 
+       目标：当输入行数时出现乘法表，例如我输入8，就会出现8行乘法表
+          
+       思路：
+             1.先制作一个表格
+             2.制作弹出提示边框，输入数值定义为行数
+             3.创建循环嵌套，外循环为输入行数的循环可用tr，内循环为列数的循环可用td（一个个小方框），当列数和行数相等即跳出内循环时，换行
+             3.最后调整表格的边框间距之类的
+    
+    
+    */
+
+
+    var line = window.prompt("请输入乘法表的行数：", "9");
+
+
+
+
+
+    document.write("<table border='1'>");
+    for (var i = 1; i <= line; i++) {
+        document.write("<tr>");
+
+        for (var j = 1; j <= i; j++) {
+            document.write("<td>");
+            document.write(j + "&times" + i + "=" + (i * j));
+            document.write("</td>");
+        }
+        document.write("</tr>");
+
+
+    }
+
+
+    // 输出表格
+    document.write("</table>");
+
+    document.write("<h3>" + line + "&times" + line + "乘法表</h3>");
+
+
+
+
+
+
+
+</script>
+
+</html>

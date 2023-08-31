@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 消除 html页面的 默认样式 */
+            margin: 0;
+            padding: 0;
+            background: url(img/login_bg.png);
+            background-repeat: no-repeat;
+            /* 默认占满宽度 */
+            background-size: 100%;
+        }
+
+        .d1 {
+            background: white;
+            width: 960px;
+            height: 550px;
+            /* 水平居中  左右外边距设置成auto自动就好了*/
+            margin: 30px auto;
+            border: 10px solid Rgb(238, 238, 238);
+        }
+
+        .d2 {
+            /* 使用浮动来实现 盒子的布局 */
+            float: left;
+            width: 280px;
+        }
+
+        .ft {
+            float: left;
+            margin-top: 50px;
+        }
+
+        .d4 {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 15px;
+        }
+
+        .s3 {
+            color: pink;
+        }
+
+        .c1 {
+            font-size: 20px;
+            color: rgb(255, 205, 39);
+            /* 行元素不能设置 上下外边距 */
+            margin-top: 20px;
+            margin-left: 20px;
+            display: block;
+        }
+
+        .c2 {
+            font-size: 20px;
+            color: #d3d3d3;
+            /* 行元素不能设置 上下外边距 */
+            margin-left: 20px;
+            display: block;
+        }
+
+        table {
+            text-align: right;
+            font-size: 15px;
+            color: rgb(186, 186, 186);
+        }
+
+
+        .inp1 {
+            width: 220px;
+            height: 24px;
+            /* 设置圆角边框 */
+            border-radius: 4px;
+            border: solid 1px #d3d3d3;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .inp2 {
+            width: 100px;
+            height: 24px;
+            /* 设置圆角边框 */
+            border-radius: 8px;
+            border: solid 1px #d3d3d3;
+            margin-bottom: 20px;
+        }
+
+        .verify {
+            height: 28px;
+            vertical-align: middle;
+            width: 100px;
+            margin-left: 14px;
+        }
+
+        .sex {
+            margin-bottom: 20px;
+            margin-left: 0px;
+        }
+
+        input[type="radio"]:checked::before {
+            background: tomato;
+        }
+
+        .d3 {
+            height: 28px;
+            /* 行高 跟高度一样 是为了设置字体垂直方向居中 */
+            line-height: 28px;
+            margin-left: 40px;
+        }
+
+        .tdsex {
+            text-align: left;
+        }
+
+        .date {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+
+        <div class="d2">
+            <span class="c1">新用户注册</span>
+            <span class="c2">USER REGISTER</span>
+        </div>
+
+        <div class="ft">
+            <form action="register">
+                <table>
+                    <tr>
+                        <td>用户名</td>
+                        <td><input type="text" class="inp1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>密码</td>
+                        <td><input type="password" class="inp1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" class="inp1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>姓名</td>
+                        <td><input type="text" class="inp1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>手机号</td>
+                        <td><input type="text" class="inp1"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="sex1">性别</td>
+                        <td class="tdsex">
+                            <div class="d3">
+                                <input type="radio" name="sex" checked class="sex">男
+                                <input type="radio" name="sex">女
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>出生日期</td>
+                        <td><input type="date" class="inp1 date"></td>
+                    </tr>
+
+                    <tr>
+                        <td>验证码</td>
+                        <td>
+                            <input type="text" class="inp2">
+                            <img src="img/verify_code.jpg" class="verify">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center"><input type="image" src="img/regbtn.jpg"></td>
+                    </tr>
+
+
+
+                </table>
+            </form>
+        </div>
+
+        <div class="d4">
+            已有账号？<span class="s3">立即登录</span>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var a = "110";
+    var b = 120;
+    // 一个字符串+一个数值 就会转换成字符串 变成字符串拼接
+    document.write(a + b);
+    document.write("<br>数据转换一下</br>");
+
+    //  如果执意要进行数值相加，就要进行数据类型的转换
+    // 字符串转数值
+    var c = parseInt(a) + b;
+    document.write(c);
+    document.write("<br>数据转换一下<br>");
+
+    // 数值转字符串
+    var d = "10.11"
+    c = parseFloat(d) + b;
+    document.write(c)
+    document.write("<br>数据转换一下</br>");
+
+
+    // 使用转换函数 要传进去的数据一定要是数值 如果是其他类型的数据就会提示NaN Not a Number 不是一个数值
+    // parseFloat将数字开头一部分可以转换
+    var f = "123abc"; //123
+    c = parseFloat(f) + 10;
+    document.write(c)
+    document.write("<br>数据转换一下<br>");
+
+    var g = "abc123";
+    c = parseFloat(g) + 10;
+    document.write(c)
+
+
+
+</script>
+
+</html>
